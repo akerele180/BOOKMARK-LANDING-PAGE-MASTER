@@ -269,10 +269,11 @@ img.up {
     padding-bottom: 20px;
 }
 .down {
-    transform: rotate(180deg);    
+    transform: rotate(180deg);
+    transition: linear .5s all;    
 }
 .answered {
-    display: block;
+    display: block; 
 }
 .answers p {
     font-size: 1rem;
