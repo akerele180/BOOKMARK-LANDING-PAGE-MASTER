@@ -41,8 +41,7 @@ nav {
     list-style-type: none;
     text-transform: uppercase;
     letter-spacing: 1.1px;
-    padding: 10px 30px;
-    
+    padding: 10px 30px;   
 }
 .lists ul li a {
     text-decoration: none;
@@ -160,7 +159,6 @@ section.features {
 }
 .middle-illustration h3 {
     font-size: 1.5rem;
-    
 }
 .middle-illustration p {
     padding: 15px 0px 28px;
@@ -250,6 +248,7 @@ img.up {
     float: right;
     cursor: pointer;
     margin-top: 5px;
+    transition: linear .2s all; 
 }
 .questions-answers {
     border: 1px solid var(--GrayishBlue);
@@ -267,13 +266,15 @@ img.up {
 .answers {
     display: none;
     padding-bottom: 20px;
+    transition: display 1s ease-in-out;
 }
 .down {
     transform: rotate(180deg);
     transition: linear .5s all;    
 }
 .answered {
-    display: block; 
+    display: block;
+    transition: display 1s ease-in;
 }
 .answers p {
     font-size: 1rem;

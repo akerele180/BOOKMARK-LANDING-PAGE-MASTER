@@ -1,9 +1,17 @@
-const up = document.querySelectorAll[1](".up");
-const down = document.querySelector(".down");
-// const answers = document.querySelector(".answers");
-// const answered = document.querySelector(".answered");
+const answeredDee = document.getElementsByClassName("answers");
+const ups = document.querySelectorAll(".up");
 
-up.addEventListener('click', ()=>{
-  up.classList.toggle("down");
-  answers.classList.toggle("answered")
-});
+
+ups.forEach((element, index) => {
+  element.addEventListener("click", ()=>{
+    element.classList.toggle("down");
+    console.log(answeredDee[index]);
+    console.log(index)
+
+    if (element.className.includes("down")){
+      answeredDee[index].classList.toggle("answered");
+    } else if (!element.className.includes("down")){
+      answeredDee[index].classList.remove("answered")
+    }
+  })
+})
